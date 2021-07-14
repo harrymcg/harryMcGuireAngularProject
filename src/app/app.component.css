@@ -1,12 +1,10 @@
-p {
-  color: green;
-}
-
+/*
 ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 20px; /* Remove margins */
+  list-style-type: none; /* Remove bullets 
+  padding: 0; /* Remove padding 
+  margin: 20px; /* Remove margins 
 }
+*/
 
 mat-toolbar {
     background: #004a9f;
@@ -14,18 +12,45 @@ mat-toolbar {
 }
 
 mat-sidenav {
-    margin: 16px;
+    margin: 12px;
     width: 200px;
     border-right: none;
     background: #002b5c;
     color: white;
     border-radius: 10px;
-    padding: 16px;
-    text-align: center;
+    padding-top: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: left;
 }
 
 mat-sidenav-container {
     height: calc(100vh - 65px);
+}
+
+.mat-divider {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: lightgray;
+    padding: 0px;
+    width: 100%;
+ }
+
+ .menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.75rem;
+}
+
+.side-icon {
+    margin-right: 8px;
+    padding-left: 0px;
+    size: 8px;
 }
 
 .content {
@@ -35,10 +60,29 @@ mat-sidenav-container {
     margin-left: 32px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 
     font-size: 2rem;
     color: lightgray;
 }
 
+.avatar {
+    margin-top: 16px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.name {
+    margin-top: 8px;
+    font-weight: normal;
+    align-items: center;
+}
+
+.designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgrey;
+}
