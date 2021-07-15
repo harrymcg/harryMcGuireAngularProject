@@ -1,3 +1,105 @@
+<mat-toolbar>
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+  My portfolio
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <div>
+      <img
+        class="avatar mat-elevation-z8"
+        src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+      />
+      <h4 class="name">Harry McGuire</h4>
+      <p class="designation">Tinkerer</p>
+      <mat-divider></mat-divider>
+      <button
+        mat-button
+        class="menu-button"
+        routerLink="/home"
+        routerLinkActive="active"
+      >
+        <!--</button> routerLink="/app" routerLinkActive="active"> -->
+        <mat-icon class="side-icon">home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button
+        mat-button
+        class="menu-button"
+        routerLink="/about-me"
+        routerLinkActive="active"
+      >
+        <mat-icon class="side-icon">info</mat-icon>
+        <span>About</span>
+      </button>
+      <mat-divider></mat-divider>
+      <button
+        mat-button
+        class="menu-button"
+        routerLink="/whats-next"
+        routerLinkActive="active"
+      >
+        <mat-icon class="side-icon">queueplaynext</mat-icon>
+        <span>What's next</span>
+      </button>
+      <button
+        mat-button
+        class="menu-button"
+        routerLink="/how"
+        routerLinkActive="active"
+      >
+        <mat-icon class="side-icon">computer</mat-icon>
+        <span>How I did it</span>
+      </button>
+
+      <!-- commented out the "help" functionality as there isn't anything to see here. 
+      <mat-divider></mat-divider>
+
+      <button mat-button class="menu-button">
+          <mat-icon class="side-icon">help</mat-icon>
+          <span>Help</span>
+      </button>
+      -->
+    </div>
+
+    <!-- all the pretend content I've made, including live-links, are here -->
+    <!--
+    <div>
+      Sidebar content here!
+      <ul>
+        <h3>
+          <a routerLink="/about-me" routerLinkActive="active">About Me</a>
+        </h3>
+        <h4>list item #2</h4>
+      </ul>
+    </div>
+
+  -->
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <!--Main content here!-->
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- ALL MY RANDOM TEST STUFF IS BELOW THIS
+
+<h1>app.component.html is working yay!</h1>
+
+<p>Test of material design implementation:</p>
+<mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+-->
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -7,6 +109,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<!--
 <style>
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -303,8 +406,9 @@
     }
   }
 </style>
-
+-->
 <!-- Toolbar -->
+<!--
 <div class="toolbar" role="banner">
   <img
     width="40"
@@ -328,8 +432,10 @@
 </div>
 
 <div class="content" role="main">
+-->
 
-  <!-- Highlight Card -->
+<!-- Highlight Card -->
+<!--
   <div class="card highlight-card card-small">
 
     <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
@@ -351,8 +457,9 @@
     </svg>
 
   </div>
-
-  <!-- Resources -->
+-->
+<!-- Resources -->
+<!--
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
 
@@ -388,8 +495,10 @@
     </a>
 
   </div>
+  -->
 
-  <!-- Next Steps -->
+<!-- Next Steps -->
+<!-- 
   <h2>Next Steps</h2>
   <p>What do you want to do next with your app?</p>
 
@@ -432,8 +541,10 @@
       <span>Build for Production</span>
     </div>
   </div>
+  -->
 
-  <!-- Terminal -->
+<!-- Terminal -->
+<!--
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
       <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
@@ -442,8 +553,10 @@
       <pre *ngSwitchCase="'test'">ng test</pre>
       <pre *ngSwitchCase="'build'">ng build</pre>
   </div>
+  -->
 
-  <!-- Links -->
+<!-- Links -->
+<!--
   <div class="card-container">
     <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank" rel="noopener">
       <svg id="Group_20" data-name="Group 20" xmlns="http://www.w3.org/2000/svg" width="21.813" height="23.453" viewBox="0 0 21.813 23.453">
@@ -483,8 +596,10 @@
       </svg>
     </a>
   </div>
+  -->
 
-  <!-- Footer -->
+<!-- Footer -->
+<!--
   <footer>
       Love Angular?&nbsp;
       <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star.
@@ -504,6 +619,7 @@
   </svg>
 
 </div>
+-->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
@@ -513,4 +629,5 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet>
+-->

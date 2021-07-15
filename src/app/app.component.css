@@ -1,0 +1,97 @@
+/*
+ul {
+  list-style-type: none; /* Remove bullets 
+  padding: 0; /* Remove padding 
+  margin: 20px; /* Remove margins 
+}
+*/
+
+mat-toolbar {
+    background: #004a9f;
+    color: white;
+}
+
+mat-sidenav {
+    margin: 12px;
+    width: 200px;
+    border-right: none;
+    background: #002b5c;
+    color: white;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+}
+
+.mat-divider {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: lightgray;
+    padding: 0px;
+    width: 100%;
+ }
+
+ .menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.75rem;
+}
+
+.side-icon {
+    margin-right: 8px;
+    padding-left: 0px;
+    size: 8px;
+}
+
+.content {
+    height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+    font-size: 2rem;
+    color: lightgray;
+}
+
+.avatar {
+    margin-top: 16px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.name {
+    margin-top: 8px;
+    font-weight: normal;
+    align-items: center;
+    color: white;
+    padding: 2px;
+}
+
+.designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgrey;
+    padding: 2px;
+}
+
+/* all the common styling you can see on every other page
+*/
+p {
+    padding: 10px;
+}
