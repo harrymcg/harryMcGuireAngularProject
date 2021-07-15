@@ -86,3 +86,9 @@ mat-sidenav-container {
     font-size: 0.7rem;
     color: lightgrey;
 }
+
+/* all the common styling you can see on every other page
+*/
+p {
+    padding: 10px;
+}

@@ -12,11 +12,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { AboutMeComponent } from './about-me/about-me.component';
+import { WhatsNextComponent } from './whats-next/whats-next.component';
+import { HomeComponent } from './home/home.component';
+import { HowComponent } from './how/how.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    WhatsNextComponent,
+    HomeComponent,
+    HowComponent
   ],
   imports: [
     BrowserModule,
