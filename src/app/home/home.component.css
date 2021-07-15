@@ -10,3 +10,7 @@ li {
     color: black;
 }
 
+.link {
+    color: black;
+    text-decoration: underline;
+}
