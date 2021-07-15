@@ -1,8 +1,14 @@
-.contentBox {
-    padding: 10px;
+.gradientList {
+    padding: 0px;
 }
 
-p {
-    padding: 2px;
-    font-size: 0.5em;
+ol {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 0.3em;
+    color: black;
 }

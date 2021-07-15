@@ -79,12 +79,15 @@ mat-sidenav-container {
     margin-top: 8px;
     font-weight: normal;
     align-items: center;
+    color: white;
+    padding: 2px;
 }
 
 .designation {
     margin-top: 2px;
     font-size: 0.7rem;
     color: lightgrey;
+    padding: 2px;
 }
 
 /* all the common styling you can see on every other page
