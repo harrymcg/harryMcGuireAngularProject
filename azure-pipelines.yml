@@ -14,6 +14,11 @@ steps:
     command: 'install'
     verbose: true
 
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'run build'
+
 # - task: NodeTool@0
 #   inputs:
 #     versionSpec: '10.x'
