@@ -20,6 +20,8 @@ steps:
     ng build --prod
   displayName: 'npm install and build'
 
+- task: PublishBuildArtifacts@1
+
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
@@ -27,5 +29,3 @@ steps:
     appType: 'webApp'
     WebAppName: 'harryPersonal'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-
-- task: PublishBuildArtifacts@1
