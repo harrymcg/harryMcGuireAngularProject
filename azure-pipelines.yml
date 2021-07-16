@@ -10,11 +10,13 @@ pool: harrysLaptop
 
 steps:
 - task: Npm@1
+  displayName: 'npm install'
   inputs:
     command: 'install'
     verbose: true
 
 - task: Npm@1
+  displayName: 'npm build Angular'
   inputs:
     command: 'custom'
     customCommand: 'run build'
