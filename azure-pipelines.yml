@@ -9,25 +9,30 @@ trigger:
 pool: harrysLaptop
 
 steps:
-- task: NodeTool@0
+- task: Npm@1
   inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+    command: 'install'
+    verbose: true
 
-- script: |
-    npm install -g @angular/cli@latest
-    npm install
-    ng build --prod
-  displayName: 'npm install and build'
-
-
-# - task: AzureRmWebAppDeployment@4
+# - task: NodeTool@0
 #   inputs:
-#     ConnectionType: 'AzureRM'
-#     azureSubscription: 'Free Trial (a4df00e4-10ee-4f09-a997-2bbde12baabc)'
-#     appType: 'webApp'
-#     WebAppName: 'harryPersonal'
-#     packageForLinux: 'dist/'
+#     versionSpec: '10.x'
+#   displayName: 'Install Node.js'
 
-- task: PublishBuildArtifacts@1
+# - script: |
+#     npm install -g @angular/cli@latest
+#     npm install
+#     ng build --prod
+#   displayName: 'npm install and build'
+
+
+# # - task: AzureRmWebAppDeployment@4
+# #   inputs:
+# #     ConnectionType: 'AzureRM'
+# #     azureSubscription: 'Free Trial (a4df00e4-10ee-4f09-a997-2bbde12baabc)'
+# #     appType: 'webApp'
+# #     WebAppName: 'harryPersonal'
+# #     packageForLinux: 'dist/'
+
+# - task: PublishBuildArtifacts@1
 
