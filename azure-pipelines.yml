@@ -21,6 +21,12 @@ steps:
     command: 'custom'
     customCommand: 'run build'
 
+- task: CopyFiles@2
+  inputs:
+    Contents: '*.config'
+    TargetFolder: 'dist\harryMcGuireAngularProject'
+    OverWrite: true
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'dist\harryMcGuireAngularProject'
